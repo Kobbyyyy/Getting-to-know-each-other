@@ -1,20 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
     <title>Nana Kwabena Inkum Introduction Website</title>
     
     <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
         body {
             font-family: Arial, sans-serif;
-            background-color: #383333;
+            background: linear-gradient(135deg, #2c3e50 0%, #4a6491 100%);
             margin: 0;
             padding: 20px;
             line-height: 1.6;
         }
         .container {
-            width: 80%;
-            margin: auto;
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
             overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+              .main-header {
+            background: linear-gradient(to right, #1a2980, #26d0ce);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            position: relative;
         }
         .main-info {
             background: #272525;
@@ -27,6 +47,40 @@
             color: #ffff;
         }
 
+        .profile-image {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .main-photo {
+            max-width: 800px;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 5px solid #4CAF50;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+        }
+
+        .thumbnail-container {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+         .thumbnail {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            border: 3px solid #7289da;
+            margin: 10px;
+        }
+
+          .image-caption {
+            color: #ccc;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
         
         .contact-info{
             background: #fff;
@@ -35,11 +89,37 @@
             margin: 10px 0;
             border-left: 5px solid #4CAF50;
         }
-        .hobbies, .lewis, .course, .job {
+       .intro, .learn, .hobbies, .fun-fact, .job, .lewis, .course {
             background: #e7e7e7;
             padding: 15px;
             margin-bottom: 10px;
-             border-radius: 5px;
+            border-radius: 5px;
+       }
+       
+        .square-list {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+        
+        .square-list li {
+            margin-bottom: 8px;
+        }
+        
+    
+        .hobby-link {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-weight: bold;
+        
+        }
+        
+        .hobby-link:hover {
+            background-color: #45a049;
         }
         .email-link {
             color: #4CAF50;
@@ -67,35 +147,58 @@
                 
                 
                 <p>Discord: <span class="discord-info">nanakwabenaakotoinkum</span></p>
-                <img src="me-800-by-800.jpg" alt="description of image" >
+               
             </div> 
-        </header>
+       
+        <div class="profile-image">
+        
+            <img src="me-800-by-800.jpg" alt="Nana Inkum Headshot" class="main-photo">
+            <p class="image-caption">me-800-by-800.jpg (max 800 pixels)</p>
 
-        <section class="lewis">
-			<h2>Year at Lewis: Junior Year</h2>
-			<h2>Lewis major/minor/concentrations: Computer Science Major</h2>
-			<h2>Reasons for pursuing this degree: Sounds pretty cool</h2>
+            <div class="thumbnail-container">
+        
+                <img src="me-300-by-300.jpg" alt="Thumbnail" class="thumbnail">
+                <p class="image-caption">me-300-by-300.jpg (max 300 pixels)</p>
+            </div>
+        </div>
+        <section class="intro">
+            <h2>Introduction</h2>
+            <p>Hello! I'm Nana Kwabena Inkum, but most people call me Nana. I'm currently a junior at Lewis University majoring in Computer Science. I was born and raised in Ghana, West Africa, and moved to the United States to pursue my education.</p>
+            <p>Back home in Ghana, I'm the first in my family to study abroad, which makes this journey even more special. I chose Computer Science because technology has always fascinated me, and I believe it's the key to solving many of the world's problems.</p>
         </section>
 
-		<section class="course">
-            <h2>Reasons for Taking This Course</h2>
-            <p>Software engineering just sounds really cool and I want to build cool products to solve problems</p>
+
+        
+
+		
+        <section class="learn">
+            <h2>What I Hope to Learn in this Course</h2>
+            <ul class="square-list">
+                <li>How to design and build professional software applications</li>
+                <li>Best practices for writing clean code</li>
+                <li>Working effectively in development teams using Agile</li>
+                <li>Understanding the full software development lifecycle</li>
+                <li>How to deploy applications to Customers</li>
+            </ul>
         </section>
 
-		<section class="job">
-            <p>Current/Recent Job</p>
-			<p>Full timse student and I work as a Cashier over at a Caseys Part Time. I also do some graphic designing for churches which gives me extra money</p>
-        </section>		
-
-        <section class="hobbies">
-            <h2>Hobbies and Special Interests</h2>
-            <p>Soccer and Graphic Design</p>
+			
+         <section class="hobbies">
+            <h2>My Favorite Hobby/ Activity</h2>
+            <p>I enjoy two hobbies that help me relax and express my creativity:</p>
+            <ul class="square-list">
+                <li><strong>Soccer:</strong> I've played soccer since childhood in Ghana. It's not just a sport for me it's a way to stay active, build teamwork skills, and connect with friends.</li>
+                <li><strong>Graphic Design:</strong> I create designs for churches and local businesses. This allows me to express my creativity while earning some extra money on the side.</li>
+                 <p>If you're interested in learning graphic design like I do, check out this great beginner's resource:</p>
+                 <a href="https://www.udemy.com/topic/photoshop/free/?utm_campaign=Search_Keyword_Gamma_NonP_la.EN_cc.US&utm_source=google&utm_medium=paid-search&portfolio=USA&utm_audience=mx&utm_tactic=nb&utm_term=photoshop%20design%20course%20training&utm_content=g&funnel=&test=&gad_source=1&gad_campaignid=21096554129&gbraid=0AAAAADROdO0C79W9It_cHKqKIruDDrdB3&gclid=Cj0KCQiAkPzLBhD4ARIsAGfah8h7VQU-sL8Z3agKE0MlZO7ibG7IchvjKpzu_zdgOGkP8ckmhpTLV4QaAtjiEALw_wcB" class="hobby-link" target="_blank">Learn Graphic Design Basics</a>
         </section>
+
 
         <section class="fun-fact">
             <h2>Fun Fact</h2>
-            <p>I was born and raised in Ghana, West Africa</p>
+           <p>A uniquely me fact is that in Ghanaian culture, names have special meanings. My middle name "Kwabena" means "born on Tuesday" in the Akan language, which is actually true I was born on a Tuesday! This tradition connects me to my heritage every time I introduce myself.</p>
+           
         </section>
-    </div>
+  
 </body>
 </html>
